@@ -9,4 +9,3 @@
         public ICollection<Enrollment> Enrollments { get; set; }
     }
 }
-Hello
