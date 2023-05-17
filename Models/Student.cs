@@ -6,10 +6,11 @@ namespace MyUniversity.Models
 {
     public class Student
     {
+        [Display(Name = "Full Name")]
         [NotMapped]
         public string FullName
         {
-            get { return FirstName + "" + LastName; }
+            get { return FirstName + " " + LastName; }
         }
         public int StudentID { get; set; }
         [Display(Name = "Last Name")]
