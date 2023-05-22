@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyUniversityContext;
 
@@ -11,9 +12,11 @@ using MyUniversityContext;
 namespace MyUniversity.Migrations
 {
     [DbContext(typeof(db))]
-    partial class dbModelSnapshot : ModelSnapshot
+    [Migration("20230522024815_identity_tables")]
+    partial class identity_tables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
