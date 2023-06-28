@@ -241,7 +241,7 @@ namespace MyUniversity.Migrations
 
                     b.HasKey("CourseID");
 
-                    b.ToTable("Course");
+                    b.ToTable("Course", (string)null);
                 });
 
             modelBuilder.Entity("MyUniversity.Models.Enrollment", b =>
@@ -267,7 +267,7 @@ namespace MyUniversity.Migrations
 
                     b.HasIndex("StudentID");
 
-                    b.ToTable("Enrollment");
+                    b.ToTable("Enrollment", (string)null);
                 });
 
             modelBuilder.Entity("MyUniversity.Models.Student", b =>
@@ -294,7 +294,7 @@ namespace MyUniversity.Migrations
 
                     b.HasKey("StudentID");
 
-                    b.ToTable("Student");
+                    b.ToTable("Student", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

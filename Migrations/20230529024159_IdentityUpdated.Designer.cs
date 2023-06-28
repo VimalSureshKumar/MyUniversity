@@ -12,8 +12,8 @@ using MyUniversityContext;
 namespace MyUniversity.Migrations
 {
     [DbContext(typeof(db))]
-    [Migration("20230522024815_identity_tables")]
-    partial class identity_tables
+    [Migration("20230529024159_IdentityUpdated")]
+    partial class IdentityUpdated
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
